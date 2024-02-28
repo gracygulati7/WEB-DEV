@@ -47,18 +47,18 @@ Nesting means kisi element ke andar dusra element use karna like we use h1 tag i
 
 ## Tags
 
-| Tags      | Description                                   |
-| --------- | --------------------------------------------- |
+| Tags        | Description                                   |
+| ----------- | --------------------------------------------- |
 | `<p></p>`   | Used for defining paragraphs.                 |
 | `<b></b>`   | Represents bold text.                         |
 | `<h1></h1>` | Heading. There are 6 different heading levels |
-
 
 `<p>` if we want spaces as we write to be displayed in this tag then use `<pre>` instead of `<p>`. <br>
 
 ## HTML Boilerplate
 
 html
+
 ```
 <!DOCTYPE html>   represents Document Type with Html updated version(HTML 5)
 <html lang="en">    Root Element
@@ -96,24 +96,25 @@ only 1 h1 tag used in websites. h2 can be multiple.
 -> in img tag there is an alt attribute.
 The required alt attribute for the `<img>` tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
 
-# semantic markup 
-    it is markup that relates to meaning of content 
+# semantic markup
+
+    it is markup that relates to meaning of content
     two types of tags : semantic and non semantic.
-     non semantic tags ko dekhke pta hi nhi lgta content kya hai 
-     semantic tag egs: h1,p,img 
-     non semantic tags: div,span 
-     all websites use SEMANTIC TAGS 
-      need of semantic tags-  
-     1. code meaningful bn jata hai, layout-> structured bn jata hai  
-     2. seo friendly bn jati h website (search engine optimization) means website rank wise achi hogi 
-     3. readable bnata hai humari website + screen readers performs better   
+     non semantic tags ko dekhke pta hi nhi lgta content kya hai
+     semantic tag egs: h1,p,img
+     non semantic tags: div,span
+     all websites use SEMANTIC TAGS
+      need of semantic tags-
+     1. code meaningful bn jata hai, layout-> structured bn jata hai
+     2. seo friendly bn jati h website (search engine optimization) means website rank wise achi hogi
+     3. readable bnata hai humari website + screen readers performs better
      4. user experience improve hojata hai
 
 **major tags used in semantic markup:**
 
 1. header
 2. main tag
-3. footer 
+3. footer
 4. nav
 5. article
 6. section
@@ -122,6 +123,7 @@ The required alt attribute for the `<img>` tag specifies an alternate text for a
 current webpage pe rehna is anchor tag whereas dusre web page pe jana is nav tag.
 
 # html entities
+
 -> its a piece of text/string what begins with an "&" and ends with a ";". <br>
 -> for space it is `&nbsp;` (non breaking space). <br>
 -> for < sign it is `&lt;` for > sign it is `&gt;` <br>
@@ -131,27 +133,27 @@ current webpage pe rehna is anchor tag whereas dusre web page pe jana is nav tag
 
 `&quot;` for quotes
 
-| Character | Entity   | Note                                            |
-|-----------|----------|-------------------------------------------------|
-| &         | amp      | Interpreted as the beginning of an entity       |
-|           |          | or character reference.                         |
-| <         | lt       | Interpreted as the beginning of a tag           |
-| >         | gt       | Interpreted as the ending of a tag              |
-| "         | quot     | Interpreted as the beginning and end of an      |
-|           |          | attribute's value.                              |
-| &nbsp;    | nbsp     | Interpreted as the non-breaking space.          |
-| –         | ndash    | Interpreted as the en dash                      |
-|           |          | (half the width of an em unit).                 |
-| —         | mdash    | Interpreted as the em dash                      |
-|           |          | (equal to the width of an "m" character).       |
-| ©         | copy     | Interpreted as the copyright sign.              |
-| ®         | reg      | Interpreted as the registered sign.             |
-| ™         | trade    | Interpreted as the trademark sign.              |
-| ≈         | asymp    | Interpreted as the almost equal to sign.        |
-| ≠         | ne       | Interpreted as the not equal to sign.           |
-| £         | pound    | Interpreted as the pound symbol.                |
-| €         | euro     | Interpreted as the euro symbol.                 |
-| °         | deg      | Interpreted as the degree symbol.               |
+| Character | Entity | Note                                       |
+| --------- | ------ | ------------------------------------------ |
+| &         | amp    | Interpreted as the beginning of an entity  |
+|           |        | or character reference.                    |
+| <         | lt     | Interpreted as the beginning of a tag      |
+| >         | gt     | Interpreted as the ending of a tag         |
+| "         | quot   | Interpreted as the beginning and end of an |
+|           |        | attribute's value.                         |
+| &nbsp;    | nbsp   | Interpreted as the non-breaking space.     |
+| –         | ndash  | Interpreted as the en dash                 |
+|           |        | (half the width of an em unit).            |
+| —         | mdash  | Interpreted as the em dash                 |
+|           |        | (equal to the width of an "m" character).  |
+| ©         | copy   | Interpreted as the copyright sign.         |
+| ®         | reg    | Interpreted as the registered sign.        |
+| ™         | trade  | Interpreted as the trademark sign.         |
+| ≈         | asymp  | Interpreted as the almost equal to sign.   |
+| ≠         | ne     | Interpreted as the not equal to sign.      |
+| £         | pound  | Interpreted as the pound symbol.           |
+| €         | euro   | Interpreted as the euro symbol.            |
+| °         | deg    | Interpreted as the degree symbol.          |
 
 use & in front of entity and ; in the end.
 
@@ -159,14 +161,15 @@ use & in front of entity and ; in the end.
 ->all entities have a uni code on mdn html and if we want to use them in html file then we need to convert the uni code to decimal and then use it with &# at the starting. <br>
 syntax: &#decimalcode
 
-
 # Emmet:
+
 -> set of related plugins used by developers. <br>
 -> visit emmet.io <br>
-*Representation:* <br>  
+_Representation:_ <br>  
 -> 1. child: > <br>
 syntax: parent>child <br>
 eg: if you want div inside p u can write p>div it will be shown as: <br>
+
 ```
 <p>
     <div>
@@ -177,6 +180,7 @@ eg: if you want div inside p u can write p>div it will be shown as: <br>
 -> 2. sibling: + <br>
 syntax: parent>child1+child2 <br>
 eg: div and img siblings (p>div+img) <br>
+
 ```
 <p>
     <div></div>
@@ -184,22 +188,23 @@ eg: div and img siblings (p>div+img) <br>
 </p>
 ```
 
--> 3.Multiplication: * <br>
-if u want a tag to be prined multiple times u can just add * then the no. of times u want it to be printed. <br>
-eg : div*5 will produce output as: <br>
-     
+-> 3.Multiplication: _ <br>
+if u want a tag to be prined multiple times u can just add _ then the no. of times u want it to be printed. <br>
+eg : div\*5 will produce output as: <br>
+
 ```
       <div></div>
-      <div></div> 
-      <div></div> 
-      <div></div> 
-      <div></div> 
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
 ```
 
 -> 4. boiler plate code: !
 gives basic code of html file.
 
 # HTML5 <br>
+
 -> means new features(upgrades) <br>
 -> other things/features that are not part of html (eg: javascript api)
 
@@ -209,29 +214,34 @@ html standard: <br>
 -> also called as livig standard. (gets updated with time)
 
 # TABLES <br>
+
 -> tables are used to represent real life table data. <br>
 -> Attributes: Rows and Columns. <br>
 
 **semantics in table** <br>
+
 ```
 <thead> -> to wrap table header
 <tbody> -> to wrap table body
 <tfoot> -> to wrap table footer
 ```
+
 **table attributes** <br>
 `colspan and rowspan attributes:` <br>
 span: ek cell kitna area occupy kr rha h table k andr <br>
 by default, ek cell table k andr 1 row and 1 col ka area occupy kr rha hota hai <br>
 we use these attributes when we want cell to occupy more rows and col than 1 <br>
-![alt text](image-1.png) 
-
+![alt text](image-1.png)
 
 # style attribute <br>
+
 -> The style attribute is used to add styles to an element, such as color, font, size, and more. <br>
 
 # lang attribute <br>
+
 -> You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. <br>
 -> This is meant to assist search engines and browsers. <br>
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -240,3 +250,54 @@ we use these attributes when we want cell to occupy more rows and col than 1 <br
 </body>
 </html>
 ```
+
+# forms <br>
+
+-> they are used to collect data from the user. <br>
+**attributes** <br>
+-> action attribute is used to define what action needs to be performed when a form is submitted or where the form data should be sent. <br>
+
+```
+syntax: <br>
+<form action="/action.php">
+<form action="/action">
+```
+
+**form elements** <br>
+
+1. input element : <br>
+   -> used to create multiple form controls. <br>
+   -> there are multiple type of inputs that can be created using type attributes. <br>
+   -> it is a single tag. no closing tag is required. <br>
+   -> it has another element in it ie type element that tells the type of input. <br>
+   ![alt text](image3.png) <br>
+   -> next attribute of input element is placeholder. <br>
+   -> it is the light text shown before we enter the actual input. <br>
+
+2. label: <br>
+-> it represents a caption for an item in a user interface. <br>
+-> more formally we will use label and input differently and form a connection btw them using for attribute in label and id attribute in input. <br>
+-> id is a unique name (attribute) associated with any element. <br>
+```
+syntax: <label for="id">Label</label>
+<input type="type_name" id="id_name" placeholder="enter text">
+```
+-> label k andr ka for ki value and input k andr k id ki value should be the same to build a connection between the two. <br>
+
+3. button: <br>
+-> iska default behaviour in form is to submit the data to the server or url which is mentioned in action attribute of button. <br>
+-> if its written in form then we would have to define its behaviour. <br> <br>
+![alt text](button.png)
+<br>
+-> Submit pe click krne se sari info form ki submit ho jayegi <br>
+-> Reset pe click krne se form ke saare fields empty ho jaenge <br>
+-> Button pe click krne se action jo hamne form tag ke sath bhara hai vo ho jaega <br>
+-> Button pe click krne se koi action nhi hoga if its outside the form unless u mention the action with it that what does tht button needs to do <br>
+-> input element ki form mein button create kr skte hai <br>
+syntax: ``` <input type="submit" value="click me"> ``` <br>
+
+4. Name attribute: <br>
+-> name of the form control. submitted with the form as a part of name/value pair. <br>
+->  it is there to know at the backend that what type of info or what info was entered in the input box. so that we can access it at backend. <br>
+-> name/val pair mein name is the name i gave to my input box in code and value is the value entered by yser in the input box. <br>
+
