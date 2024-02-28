@@ -53,6 +53,9 @@ Nesting means kisi element ke andar dusra element use karna like we use h1 tag i
 | `<b></b>`   | Represents bold text.                         |
 | `<h1></h1>` | Heading. There are 6 different heading levels |
 
+
+`<p>` if we want spaces as we write to be displayed in this tag then use `<pre>` instead of `<p>`. <br>
+
 ## HTML Boilerplate
 
 html
@@ -77,6 +80,8 @@ In Head Tag all the additional informations which are not displayed on the brows
 Har element ko hum ek additional property de skte hain like in image element we can give width size as attributes.
 
 Attributes are used to provide additional information about an element.
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
 
 Syntax of attributes : `<tag attribute="value">Content</tag>`
 
@@ -87,6 +92,9 @@ id is unique whereas class is non unique.
 heading-h1 to h6
 h1-biggest; h6-smallest
 only 1 h1 tag used in websites. h2 can be multiple.
+
+-> in img tag there is an alt attribute.
+The required alt attribute for the `<img>` tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
 
 # semantic markup 
     it is markup that relates to meaning of content 
@@ -204,4 +212,31 @@ html standard: <br>
 -> tables are used to represent real life table data. <br>
 -> Attributes: Rows and Columns. <br>
 
+**semantics in table** <br>
+```
+<thead> -> to wrap table header
+<tbody> -> to wrap table body
+<tfoot> -> to wrap table footer
+```
+**table attributes** <br>
+`colspan and rowspan attributes:` <br>
+span: ek cell kitna area occupy kr rha h table k andr <br>
+by default, ek cell table k andr 1 row and 1 col ka area occupy kr rha hota hai <br>
+we use these attributes when we want cell to occupy more rows and col than 1 <br>
+![alt text](image-1.png) 
 
+
+# style attribute <br>
+-> The style attribute is used to add styles to an element, such as color, font, size, and more. <br>
+
+# lang attribute <br>
+-> You should always include the lang attribute inside the `<html>` tag, to declare the language of the Web page. <br>
+-> This is meant to assist search engines and browsers. <br>
+```
+<!DOCTYPE html>
+<html lang="en">
+<body>
+...
+</body>
+</html>
+```
