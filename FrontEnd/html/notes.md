@@ -4,7 +4,6 @@ Interconnected network of computers around the world -> Internet
 
 Client ki request ISP(Internet Service Provider) then it goes DNS(address book digital)(it has IP address) send to ISP to Client
 
-![Alt text](<Screenshot 2024-01-18 191252.png>)
 
 ## Website
 
@@ -43,7 +42,7 @@ everything from start tag to end tag. Website ke andar maine kuch display krana 
 Nested Elements:
 Nesting means kisi element ke andar dusra element use karna like we use h1 tag in body tag. Isse hum element ki properties ko mix kr skte hain.
 
-![Html Elements , Tags And Content](<Screenshot 2024-01-18 213023.png>)
+![!\[Html Elements , Tags And Content\](<Screenshot 2024-01-18 213023.png>)](image.png)
 
 ## Tags
 
@@ -73,7 +72,6 @@ html
 
 In Head Tag all the additional informations which are not displayed on the browser/website. Metadata is Data about Data.
 
-![Herarchial](<Screenshot 2024-01-18 225830.png>)
 
 ## Attributes
 
