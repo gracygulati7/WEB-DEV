@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--tables -->
+    <table border="black">
+      <caption>
+        Food Menu
+      </caption>
+      <!-- <tr> : used to display table row -->
+      <!-- table header -->
+      <thead>
+        <tr>
+          <!-- <th> : used to display table header -->
+          <!-- headings in table are always displayed in bold by default -->
+          <th>Item</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <!-- table body -->
+      <tbody>
+        <tr>
+          <!-- <td> : used to display table data -->
+          <td>Frooti</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Samosa</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>Chips</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <!-- table footer -->
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>42</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <!-- table 2 -->
+    <table border="black">
+      <caption>
+        Food Menu
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">Item</th>
+          <th colspan="2">Price</th>
+        </tr>
+        <tr>
+          <th>INR</th>
+          <th>USD</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frooti</td>
+          <td>10</td>
+          <td>0.14</td>
+        </tr>
+        <tr>
+          <td>Samosa</td>
+          <td>12</td>
+          <td>0.17</td>
+        </tr>
+        <tr>
+          <td>Chips</td>
+          <td>20</td>
+          <td>0.28</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td>42</td>
+          <td>0.59</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br />
+    <!-- table 3 -->
+    <table border="black">
+      <caption>
+        A test table with merged cells
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">average</th>
+          <th rowspan="2">red eyes</th>
+        </tr>
+        <tr>
+          <th>height</th>
+          <th>weight</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>males</td>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td>females</td>
+          <td>1.7</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- forms -->
+    <!-- action is when the form is submitted, the form-data will be sent to the file named in it. -->
+    <form action="dump.html">
+      <div>
+        <label for="username">Enter Username: </label>
+        <input type="text" id="username" placeholder="Enter Name" name="user" />
+        <!-- NAME ATTRIBUTE -->
+      </div>
+      <label>
+        password
+        <input type="password" placeholder="Enter password" name="pass" />
+      </label>
+      <br />
+      <label>
+        Age
+        <input type="number" placeholder="Enter age" />
+      </label>
+      <br />
+      <label>
+        time
+        <input type="time" />
+      </label>
+      <br />
+      <label>
+        color
+        <input type="color" />
+      </label>
+      <br />
+      <br />
+      <!-- button -->
+      <!-- jb form k submit button pe click kre to uska sara data redirect horha hai uss jgh pe jise humne action mein mention kia hai -->
+      <!-- 
+      Submit pe click krne se sari info form ki submit ho jayegi
+      Reset pe click krne se form ke saare fields empty ho jaenge
+      Button pe click krne se action jo hamne form tag ke sath bhara hai vo ho jaega
+      Button pe click krne se koi action nhi hoga if its outside the form unless u mention the action with it that what does tht button needs to do
+   -->
+      <button type="submit">Submit</button>
+      <button type="button">Hello</button>
+      <button type="reset">Reset</button>
+
+      <!-- INPUT ELEMENT AS BUTTON -->
+      <input type="button" value="yoo" />
+      <input type="submit" value="click me" />
+      <!-- by default if we give input type=submit then the value that shows on the button is also displayed as submit if we dont mention anything else in value -->
+    </form>
+
+    <hr />
+    <!-- horizontal line -->
+    <form action="https://www.youtube.com/results">
+      <input type="text" placeholder="search in youtube" name="search_query" />
+      <button>search</button>
+    </form>
+    <hr />
+    <form action="https://www.google.co.in/search">
+      <input type="text" placeholder="search in google" name="q" />
+      <button>Search</button>
+    </form>
+
+    <form action="/server">
+      <!-- checkbox -->
+      <input type="checkbox" name="age" id="age" checked />
+      <label for="age">I am 18+</label>
+      <div>
+      <!-- radio button -->
+      <input type="radio" name="fruits" id="apple" value="apple">
+      <label for="apple">Apple</label>
+      <input type="radio" name="fruits" id="mango" value="Mango">
+      <label for="mango">Mango</label>
+      <input type="radio" name="fruits" id="Banana" value="Banana">
+      <label for="Banana">Banana</label>
+      </div>
+      <br>
+      <div>
+        choose your subjects:
+        <input type="checkbox" name="subjects" id="maths" value="math"  />
+        <label for="maths">Maths</label>
+        <input type="checkbox" name="subjects" id="science" value="sci" />
+        <label for="science">Science</label>
+        <input type="checkbox" name="subjects" id="english" value="eng"  />
+        <label for="english">English</label>
+      </div>
+      <br>
+      <div>
+        Choose your profession:
+      <select name="profession" id="profession">
+        <option>Select your option</option>
+        <option value="stu" selected>Student</option>
+        <option value="dev">Developer</option>
+      </select>
+      </div>
+      <label for="vol">Select Volume Level</label>
+      <input type="range" id="vol" min="0" max="100" name="vol" step="10" value="70">
+      <br>
+      <label for="feedback">Please give your feedback:</label>
+      <textarea id="feedback" name="feedback" rows="5" cols="20" placeholder="write your feedback here"></textarea>
+      <button>Submit</button>
+    </form>
+
+
+    <!-- practice ques: -->
+    <form action="/action">
+      <h2>Registration Form</h2>
+      <!-- <label for="first"></label> -->
+      <input type="text" id="first" name="first" placeholder="First Name">
+      <input type="text" id="last" name="last" placeholder="Last Name">
+      <div>
+        <label for="gender">Please Select Your Gender</label>
+        <select name="gender" id="gender">
+          <option value="male" selected>Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="check">Do you agree to all terms of service?</label>
+        <input type="checkbox" id="check" name="check" checked>
+        <label for="check">Yes, I agree</label>
+      </div>
+      <button>Register</button>
+    </form>
+  </body>
+</html>

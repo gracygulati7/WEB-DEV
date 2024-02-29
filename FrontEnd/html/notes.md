@@ -301,3 +301,61 @@ syntax: ``` <input type="submit" value="click me"> ``` <br>
 ->  it is there to know at the backend that what type of info or what info was entered in the input box. so that we can access it at backend. <br>
 -> name/val pair mein name is the name i gave to my input box in code and value is the value entered by yser in the input box. <br>
 
+5. checkbox: <br>
+-> input type mein agr checkbox dedu toh checkbox create ho jata hai <br>
+```
+syntax: 
+<input type="checkbox" name="age" id="age" checked >
+<label for="age">I am 18+</label>
+```
+-> if i write checked then by default the checkbox appears already ticked , i can untick it also. <br>
+-> if i dont write checked then it will appear as unchecked and i can tick it again <br>
+-> if i submit the form with ticked checkbox then the information gets submitted in action url as name=on (name is the name that we gave to our input element by which it can be accessed at backend) <br>
+![](checkbox_on.png)
+-> if i submit the form with unticked checkbox then nothing gets passed on to the action url. <br>
+![](checkbox_off.png)
+
+6. radio button: <br>
+-> only one radio button can be selected at a time whereas multiple chcekboxes can be selected at once. <br>
+```
+syntax: 
+<input type="radio" name="fruits" id="apple" value="apple">
+<label for="apple">Apple</label>
+```
+-> if name attribute is same only then can i group multiple radio buttons together and then we can only select one radio button as only one value of the name attribute will be sent to the action url. <br>
+-> here value attribute is used to tell the action url which radio button is selected. <br>
+-> like action url also has name-value pairs. <br>
+-> so here name is same for all radio buttons but the value that will be passed will be one of the radio buttons and that value will be known only by the value attribute. <br>
+
+
+7. select element: <br>
+-> dropdowns create krne ke liye we use select element <br>
+-> selected attribute is used to pre select any element <br>
+```
+syntax:
+<select name="profession" id="profession">
+<option value="student">Student</option>
+<option value="dev">Developer</option>
+</select>
+```  
+![alt text](dropdown.png)
+
+8. range input: <br>
+-> to select any value in range. <br>
+```
+syntax:
+<label for="vol">Select Volume Level</label>
+<input type="range" id="vol" min="0" max="100" name="vol" step="10" value="70">
+```
+-> here ange starts from mn=0 and max=100 and it increases in step size like if i just move my range by 1 forward so it will be of 10 value. <br>
+-> step attribute is used when i want my data to increase in range in fixed values only. <br>
+-> value attribute sets a default value in range when a user just opens a form and it can be changed. <br>
+
+9. text area element: <br>
+-> if like we want some feedback in form then this is used.
+```
+syntax:
+<label for="feedback">Please give your feedback:</label>
+<textarea id="feedback" name="feedback" rows="5" cols="20" placeholder="write your feedback here"></textarea>
+```
+-> default size is 2 rows and 10 cols but we can resize it using rows and cols attributes. <br>
