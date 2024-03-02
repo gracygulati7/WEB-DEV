@@ -1,0 +1,57 @@
+*{
+    /* color:pink; */
+    font-family: cursive;
+}
+h1{
+    color:green;
+}
+#head2{
+    color:rgb(11, 11, 11);
+    text-align:center;
+    text-decoration: red dotted overline;
+    font-weight: lighter;
+}
+p{
+    color:red;
+}
+button{
+    color:brown;
+    background-color:#00ff00;
+}
+body{
+    background-color: rgb(255,255,0);
+    /* background-color: #ffff00;  for yellow color */
+}
+.myclass{
+    color:black;
+}
+#box{
+    background-color: blue;
+}
+.heading{
+    color:red;
+    /* text-decoration: underline; */
+}
+/* #bb{
+    background-color:green;
+} */
+
+.mypara{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#three{
+    font-size:20px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+#siyaram{
+    text-align: center;
+    text-transform: capitalize;
+}
+#outer{
+    font-size:25px
+}
+#inner{
+    font-size: 10px;
+}
