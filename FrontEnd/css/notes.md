@@ -67,7 +67,7 @@ h1{
 }
 ```
 
-# selectors: <br>
+**Selectors:** <br>
 
 1. universal selectors: `*{ }` -> to my full document. <br>
 2. element selectors: `element{ }` -> on a single element <br>
@@ -77,6 +77,33 @@ h1{
    -> 1 id is given to 1 element only <br>
 4. class selector -> `.myclass { }` <br> -> class is used for giving same styling to two diffrent elements.<br>
    -> for eg if i have a heading h3 and a paragraph h and i want both of them to have same styling to both the elements so i will give both of them same class and then apply styling to that class. <br>
+
+**Units in CSS** <br>
+-> it has relation with size ki koi chiz kitni badi ya choti honi chahiye <br>
+-> css k andr agr hume btana hai ki koi chiz kitni badi ya choti honi chahiye to uske liye hum pixels (px) use krte hai. <br>
+
+-> there are two types of units-: <br>
+
+1. absolute - px,cm,mm,in
+2. relative - %,em,rem,vh,vw
+
+1 inch has 2.54cm = 96px <br>
+eg: `font-size:2px;` <br>
+-> normal paragraph has font-size of 16px in browser <br>
+
+-> *Percentage (%) unit* : it is often used to define a size as relative to an element's parent object. <br>
+eg : `width:33%;` or `margin-left:50%;` <br>
+
+-> *EM unit* : in case of font-properties like size, its relative to parents font size for eg if there are two divs - parent and child and parent has font size 10px and child has font size 1em so here 1em=10px, if its 2em so it will be= 2* 10=20px , if its 0.5em so it will be= 10*0.5=5px. <br>
+but in case of width it will be relative to font size of the child element itself means if parent font size=10px and child font size=2em=20px(2 * 10) and width=5em, so width of child element will be relative to childs font size which wil be=100px(5*20). <br>
+![alt text](em.png)
+
+-> *REM (Root EM)* : relative to font size of root element. <br>
+for eg: if i write `width:5rem;` so width will be 5 * font size of root element which is default font size of anything written in body element. <br>
+
+-> vh: relative to 1% of viewport/browser's height <br>
+[100vh will be = full size of browser height] <br>
+-> vw: relative to 1% of viewport/browser's width <br>
 
 **text properties:** <br>
 
@@ -108,24 +135,11 @@ h1{
 
 Generic- <br>
 
-1. serif : times new roman <br>
-2. sans-serif :arial <br>
-3. cursive : handwritting jaisi lgti hai <br>
-4. fantasy <br>
-5. monospace <br>
-
-**Units in CSS** <br>
--> it has relation with size ki koi chiz kitni badi ya choti honi chahiye <br>
--> css k andr agr hume btana hai ki koi chiz kitni badi ya choti honi chahiye to uske liye hum pixels (px) use krte hai. <br>
-
--> there are two types of units-: <br>
-
-1. absolute - px
-2. relative
-
-1 inch has 2.54cm = 96px <br>
-eg: `font-size:2px;` <br>
--> normal paragraph has font-size of 16px in browser <br>
+a. serif : times new roman <br>
+b. sans-serif :arial <br>
+c. cursive : handwritting jaisi lgti hai <br>
+d. fantasy <br>
+e. monospace <br>
 
 5. line-height: <br>
    -> ye decide krti hai ki mere line ya text ki kitni height honi chahiye <br>
@@ -196,3 +210,61 @@ eg: `font-size:2px;` <br>
    b. block: takes full space available in width like div,h1 tag. <br>
    c. inline-block: similar to inline but we can set margin & padding, width & height. <br>
    d. none: to remove element from document flow and there wont even be any space element after element disappears from the document and that space gets occupied by next element leaving no trace of element which has display:none. <br>
+
+7. visbility property: <br>
+-> syntax: `visibilty:hidden` <br>
+-> there is a difference between `visibility:hidden` and `display:none` which is that when visibilty is set to none, space for element is reserved , but for display set to none, no space is reserved or blocked for the element. <br>
+
+**ALPHA CHANNEL :** <br>
+-> RGBA (red,blue,green,alpha) <br>
+-> it sets opacity (0-1) which is alpha's value range like red,blue,green has range from 0-255 <br>
+-> if opacity is 0 so color is not visible at all and to show color properly then its set to 1. <br><br>
+![alt text](<alpha channel.png>)
+
+# Level-3 <br>
+
+8. Position property: <br>
+-> the position css property sets how an element is positioned in a document. <br>
+syntax: `position:static/relative/absolute/fixed`
+
+a. static: default position (top,right,bottom,left,z-index properties have no effect) <br>
+b. relative: element is relative to itself (top,right,bottom,left,z-index properties will work) <br>
+c. absolute: positioned relative to its closest positioned ancestor means that ancestor/parent which has any position other than static. (removed from flow) <br>
+d. fixed: positioned relative to browser (removed from flow.) <br>
+can be used for header in websites by giving top:0px <br>
+e. sticky: positioned relative to user's scroll position. <br>
+if this is also given with top:0px and when user scrolls and the element reach top:0px then it also behaves as fixed <br>
+
+**z-index:** -> it decides the stack level of elements ki konsa element kisko overlap krega. <br>
+overlapping elements with a larger z-index cover those with a smaller one. <br>
+by default jo element phle likha jata hai vo under jata hai and jo element baad mein likha jata hai vo over lap krta h dusre element ko. <br>
+```
+z-index:auto(0)   #default
+z-index:1/2/...   
+# jitna bda +ve value pe diya jaye vo utna hi upr ki trf ata hai
+z-index:-1/-1/... 
+# jitna bda +ve value pe diya jaye vo utna hi niche ki trf ata hai
+```
+
+jitna upr ya niche kisi element ko leke jana chahte h hum uski normal position se usse hum top,botton se krte hai and jitna left ya right mein krna chahte hai usse left,right se krte hai using +ve and -ve <br>
+vaise hi jitna kisi element ko hum kisi dusre element k upr ya niche krna chahte hai usse hum z-index se krte hai <br>
+![alt text](z-index1.png)
+![alt text](z-index2.png) <br> <br>
+
+**background-image:** <br> 
+-> used to set a background image to an element <br>
+-> use website `unsplash.com` for copyright free or trademark free images. <br>
+*background-size*: `background-size:cover/contain/auto`; <br>
+-> cover means jitne are ke andr mai apni photo dal rhi hu meri photo uss area ko completely cover kr legi means there will be no empty space but if img is bigger than size of container to img utni hi visible hogi jitna container ka size hoga baki img crop ho jayegi <br>
+-> contain means iss case mein bhi img complete fit to aa jayegi but isme if img is smaller than size of container to img container k size k according apna size adjust krlegi and poori fit aayegi but isme empty space jo bchegi usme fr img repeat hoke show kregi. <br> 
+we can save it from repeat also by using `background-repeat: no-repeat;` <br> 
+-> auto means automatically jitni image aarhi hoti hai utni fit aati hai and this is by default. <br>
+-> cover is preferred at most times. <br>
+
+# Level-4 <br>
+-> FLEX-BOX <br>
+
+-> it is a 1D layout method for arranging items in rows or columns. <br>
+-> main axis and cross axis will always be at an angle of 90 degree to each other meaning they will each represnt either elements in form of row or columns <br>
+
+![alt text](flexbox.png)

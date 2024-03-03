@@ -1,0 +1,74 @@
+/* #box1{
+    height:100px;
+    width:200px;
+    background-color: green;
+    font-size:10px;
+}
+#box2{
+    height:50px;
+    width:40%;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size:2em;
+    /* width:5em; */
+    /* width:5rem; */
+/* } */ 
+div{
+    height:100px;
+    width:100px;
+    background-color: aqua;
+    border:2px solid black;
+    display: inline-block;
+}
+#box1{
+    background-image: url("cat.jpg");
+    background-size: cover;
+}
+#box2{
+    background-image: url("cat.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#box3{
+    background-image: url("cat.jpg");
+    background-size: auto;
+}
+
+/* #box1{
+    position: static;
+} */
+/* #box2{
+    position: relative; */
+    /* top:-20px; */
+    /* top:2px;
+    left:10px;
+    z-index: 1; */
+    /* left:-20px; */
+/* }
+#box3{
+    position: absolute; */
+    /* position:sticky; */
+    /* top:500px; */
+    /* top:0px; */
+    /* left:20px;
+}
+#box4{
+    position: fixed;
+    top:50px;
+    z-index: -3; */
+    /* top:0px; */
+    /* right:10px; */
+    /* bottom:0px; */
+    /* width:100vw; */
+/* } */
+
+#prac{
+    height:100px;
+    width: 100px;
+    color:white;
+    background-image:url("prac.jpg") ;
+    background-size: cover;
+    position:fixed;
+    bottom:0px;
+    right:0px;
+}
