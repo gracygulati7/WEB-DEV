@@ -268,3 +268,28 @@ we can save it from repeat also by using `background-repeat: no-repeat;` <br>
 -> main axis and cross axis will always be at an angle of 90 degree to each other meaning they will each represnt either elements in form of row or columns <br>
 
 ![alt text](flexbox.png)
+
+-> `display: flex;` -> this means now flexbox is activated and now we can use all of its properties. <br>
+-> flex-direction is set for container and not for individual elements and is used to set how flex items are placed in flex container, along which axis and direction. <br>
+-> default flex-direction is row (`flex-direction:row`). <br>
+there are 4 flex-directions: <br>
+a. flex-direction:row (main axis=row and elements are from left-right). <br>
+b. flex-direction:row-reverse (main axis=row and elements are from right-left). <br>
+c. flex-direction:column (main axis=column and elements are from top-bottom). <br>
+d. flex-direction:column-reverse (main axis=column and elements are from bottom-top). <br>
+
+*note:*- if we have created a flexbox container the all elements will remain inside it no matter what their individual sizes are , they will adjust to container size till their content allows it. <br>
+
+**flex properties for flexbox container:** <br>
+1. justify-content: alignment along the main axis. <br>
+flex-start/flex-end/centre/space-evenly/space-around/space-between <br>
+flex-start : means main axis ka start <br>
+flex-end : means main axis ka end <br>
+centre: means main axis ke center mein sare elements aajate hai <br>
+space-around: means if there is any extra spcae then vo space elements ke around space aajayegi and  first element ke left mein and last element ke right mein jo space hogi vo bich ki space ka half hogi by default and baki space equal hogi. <br>
+space-between: sari extra space boxes ke bich mein aajatai hai <br>
+space-evenly: means sari extra space evenly spread hogi even at start and end of container. <br>
+2. flex-wrap: nowrap/wrap/wrap-reverse <br>
+3. align-items: alignment along the cross axis. <br>
+4. align-content: alignment of space between and around the content 
+
